@@ -489,7 +489,7 @@ namespace Calculator
             
             public static void CheckZero(TextBlock memory)
             {
-                if(Math.Abs(mem) < 1e-7)
+                if(Math.Abs(mem) < 1e-14)
                 {
                     memory.Opacity = 0;
                 }
