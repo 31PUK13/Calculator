@@ -272,7 +272,7 @@ namespace Calculator
                 }
                 PrintReciproc(input, history);
                 input.Text = (1/(double.Parse(input.Text))).ToString();
-                if(Math.Abs(Math.Round(double.Parse(input.Text)) - double.Parse(input.Text)) < 1e-7)
+                if(Math.Abs(Math.Round(double.Parse(input.Text)) - double.Parse(input.Text)) < 1e-14)
                 {
                     input.Text = Math.Round(double.Parse(input.Text)).ToString();
                 }
