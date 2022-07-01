@@ -23,6 +23,7 @@ namespace Calculator
         
         public MainWindow()
         {
+            System.Threading.Thread.CurrentThread.CurrentCulture = new System.Globalization.CultureInfo("en-US");
             InitializeComponent();
         }
         private void Button_TouchEnter(object sender, TouchEventArgs e)
